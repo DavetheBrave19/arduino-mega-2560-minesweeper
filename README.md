@@ -1,6 +1,6 @@
 # arduino-mega-2560-minesweeper
 
-Included Files:
+**Included Files:**
 
 - wiring_1.jpg
 - wiring_2.jpg
@@ -17,7 +17,7 @@ Included Files:
 - option.h
 - Makefile
 
-Accessories:
+**Accessories:**
 
 - Arduino Mega Board 2560
 - LCD Display
@@ -25,47 +25,47 @@ Accessories:
 - Pushbutton
 - Plenty of wires
 
-Wiring instructions:
+**Wiring instructions:**
 
 LCD Display Pin <---> Arduino Pin
-=================================
-GND                   GND
-Vin                   5V
-3Vo                   NOT CONNECTED
-CLK                   52
-MISO                  50
-MOSI                  51
-CS                    10
-D/C                   9
-RST                   NOT CONNECTED
-Lite                  NOT CONNECTED
-Y+                    A2
-X+                    4
-Y-                    5
-X-                    A3
-IM0 - IM3             NOT CONNECTED
-CCS                   NOT CONNECTED
-CD                    NOT CONNECTED
+
+- GND <---> GND
+- Vin <---> 5V
+- 3Vo <---> NOT CONNECTED
+- CLK <---> 52
+- MISO <---> 50
+- MOSI <---> 51
+- CS <---> 10
+- D/C <---> 9
+- RST <---> NOT CONNECTED
+- Lite <---> NOT CONNECTED
+- Y+ <---> A2
+- X+ <---> 4
+- Y- <---> 5
+- X- <---> A3
+- IM0 - IM3 <---> NOT CONNECTED
+- CCS <---> NOT CONNECTED
+- CD <---> NOT CONNECTED
 
 Joystick Pin <---> Arduino Pin
-=================================
-GND                GND
-Vin                5V
-VRx                A1
-VRy                A0
-SW                 2
+
+- GND <---> GND
+- Vin <---> 5V
+- VRx <---> A1
+- VRy <---> A0
+- SW <---> 2
 
 Pushbutton Pin <---> Arduino Pin
-=================================
-GND                GND
-Vin                5V
-SW                 3
 
-How to Run the Code:
+- GND <---> GND
+- Vin <---> 5V
+- SW <---> 3
+
+**How to Run the Code:**
 
 Run the "make upload" command in the directory containing the included files while having the Arduino connected to the PC through a type A to type B USB cable. Make sure all the wires are properly connected to the LCD screen, joystick and pushbutton.
 
-Minesweeper:
+**Minesweeper:**
 
 This Arduino program recreates the well-known game of Minesweeper. You must reveal all the blocks that do not contain a mine to win. Blocks that do not contain a mine show the number of mines one block adjacent to it (horizontally, vertically, and diagonally). You must use that information to deduce which blocks have mines and to reveal which blocks do not have mines.
 
@@ -77,16 +77,16 @@ Once all the blocks that do not contain a mine are revealed, you win the game. O
 
 If you want to start a new game anytime, simply press the reset button. Each game is different as the mines are always randomized throughout the grid.
 
-Controls:
+**Controls:**
 
-  Menu Mode:
+Menu Mode:
 
-  - Moving the joystick up and down highlights which option you can select.
-  - Pressing the joystick select the option that is highlighed.
-  - In "Controls" menu, pressing the joystick brings you back to the main menu.
+- Moving the joystick up and down highlights which option you can select.
+- Pressing the joystick select the option that is highlighed.
+- In "Controls" menu, pressing the joystick brings you back to the main menu.
 
-  Game Mode:
+Game Mode:
 
-  - Move the cursor using joystick.
-  - Reveal the block underneath the cursor by pressing the joystick.
-  - Toggle a flag on an unrevealed block by moving the cursor to the unrevealed block and pressing the pushbutton.
+- Move the cursor using joystick.
+- Reveal the block underneath the cursor by pressing the joystick.
+- Toggle a flag on an unrevealed block by moving the cursor to the unrevealed block and pressing the pushbutton.
